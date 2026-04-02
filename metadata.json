@@ -1,0 +1,5 @@
+{
+  "name": "IPL Ticket Assistant",
+  "description": "A friendly chatbot for booking and managing IPL match tickets.",
+  "requestFramePermissions": []
+}
