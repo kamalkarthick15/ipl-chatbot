@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Send, Ticket, X, Calendar, MapPin, Info, MessageSquare, RefreshCcw } from 'lucide-react';
+import { Send, Ticket, X, Calendar, MapPin, Info, MessageSquare, RefreshCcw, TrendingUp, Tag } from 'lucide-react';
 import { GoogleGenAI } from "@google/genai";
 import { Message } from '../types';
 import { SYSTEM_INSTRUCTION } from '../constants';
@@ -155,6 +155,8 @@ export default function ChatInterface() {
       <div className="px-4 pb-2 flex gap-2 overflow-x-auto no-scrollbar">
         {[
           { icon: Calendar, label: "Upcoming Matches", text: "Show me upcoming matches" },
+          { icon: TrendingUp, label: "Trending", text: "What are the trending matches?" },
+          { icon: Tag, label: "Offers", text: "Are there any discounts or offers?" },
           { icon: Ticket, label: "Book Tickets", text: "I want to book tickets" },
           { icon: X, label: "Cancel Ticket", text: "I want to cancel my ticket" },
           { icon: Info, label: "Pricing", text: "What are the ticket prices?" },
